@@ -2,7 +2,8 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    loggedIn:false
+    loggedIn:false,
+    emplyees: []
   },
   getters: {
     isLoggedIn(state){
