@@ -9,6 +9,7 @@ import { firebase } from './firebase'
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     store.commit('SET_LOGGED_IN',true)
+    store.dispatch('getEmployees')
   }else{
     store.commit("SET_LOGGED_IN",false)
   }

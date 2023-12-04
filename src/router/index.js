@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 import HomePage from '../components/HomePage.vue'
 import EmpList from '../components/EmpList.vue'
+import TodoList from '../components/TodoList.vue'
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path:'/emp',
     component:EmpList
+  },
+  {
+    path:'/list',
+    component:TodoList
   },
   {
     path: '/about',

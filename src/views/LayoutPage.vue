@@ -20,7 +20,7 @@
     <v-navigation-drawer v-model="draw" >
       <v-divider></v-divider>
       <v-list-item link to="/" title="Home"></v-list-item>
-      <v-list-item link to="/about" title="About"></v-list-item>
+      <v-list-item link to="/list" title="About"></v-list-item>
       <v-list-item link to="/emp" title="EmpList"></v-list-item>
       <v-list-item link title="product"></v-list-item>
     </v-navigation-drawer>
