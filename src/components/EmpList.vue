@@ -121,7 +121,6 @@ export default{
                     console.log(error.message)
                     this.close()
                 })
-                                
             } 
         },
         close(){
