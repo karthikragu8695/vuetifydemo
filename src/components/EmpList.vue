@@ -124,11 +124,11 @@ export default{
             } 
         },
         close(){
-            this.id=null,
-            this.name=null,
-            this.phone=null,
+            this.id=null
+            this.name=null
+            this.phone=null
             this.designation=null
-            this.show=false  
+            this.show=false
             this.editing=false
         },
         deleteEmp(emp){

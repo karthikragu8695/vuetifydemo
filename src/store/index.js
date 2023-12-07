@@ -45,11 +45,12 @@ export default createStore({
             ...data[i]
           })
         }
+        
         commit('SET_EMPLOYEES',employees)
       })
     },
     getLists({commit}){
-      firebase.database().ref.once('TodoList').on('value',(snapshot) =>{
+      firebase.database().ref('TodoLists').on('value',(snapshot) =>{
         let lists=[]
         let data=snapshot.val()
         for(let i in data){
@@ -58,8 +59,10 @@ export default createStore({
             ...data[i]
           })
         }
+        console.log(lists)
         commit('GET_LISTS',lists)
       })
+     
     }
   },
   modules: {

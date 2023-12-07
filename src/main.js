@@ -10,6 +10,7 @@ firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     store.commit('SET_LOGGED_IN',true)
     store.dispatch('getEmployees')
+    store.dispatch('getLists')
   }else{
     store.commit("SET_LOGGED_IN",false)
   }
